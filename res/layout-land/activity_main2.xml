@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- THIS IS JUST A BACK-UP OF THE ORGINAL VERSION IN CASE I 
+	 TRY TO MAKE CHANGES ON THE GAMEPLAY SCREEN -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background" >
+
+    <!-- Layout for game status. -->
+
+    <LinearLayout
+        android:id="@+id/layoutOfEntireGameStatus"
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:orientation="horizontal" >
+
+        <!-- Player1 status -->
+
+        <LinearLayout
+            android:id="@+id/layoutOfPlayer1Status"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="horizontal" >
+        </LinearLayout>
+
+        <!-- Game status -->
+
+        <LinearLayout
+            android:id="@+id/layoutOfGameStatus"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+        </LinearLayout>
+
+        <!-- Player2 status -->
+
+        <LinearLayout
+            android:id="@+id/layoutOfPlayer2Status"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="horizontal" >
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Layout for where the characters are drawn. -->
+
+    <RelativeLayout
+        android:id="@+id/layoutForCharacters"
+        android:layout_width="match_parent"
+        android:layout_height="300px"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/layoutOfEntireGameStatus" >
+    </RelativeLayout>
+    <!-- Layout for the control buttons. -->
+
+    <LinearLayout
+        android:id="@+id/layoutForButtons"
+        android:layout_width="match_parent"
+        android:layout_height="50px"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/layoutForCharacters"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/buttonLeft"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="&lt;-" />
+
+        <Button
+            android:id="@+id/buttonUp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="up" />
+
+        <Button
+            android:id="@+id/buttonDown"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="down" />
+
+        <Button
+            android:id="@+id/buttonRight"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="->" />
+    </LinearLayout>
+
+</RelativeLayout>

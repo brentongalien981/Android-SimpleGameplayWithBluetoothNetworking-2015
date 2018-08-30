@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray" >
+
+    <TextView
+        android:id="@+id/stupid_textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="TextView" />
+
+    <Button
+        android:id="@+id/stupid_buttonPunch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/stupid_textView1"
+        android:text="Punch" />
+
+    <Button
+        android:id="@+id/stupid_buttonMoveRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/stupid_buttonPunch"
+        android:text="->" />
+
+    <Button
+        android:id="@+id/stupid_buttonMoveLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/stupid_buttonMoveRight"
+        android:text="&lt;-" />
+
+    <Button
+        android:id="@+id/stupid_buttonJump"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/stupid_buttonMoveLeft"
+        android:text="jump" />
+
+    <Button
+        android:id="@+id/stupid_buttonDuck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/stupid_buttonJump"
+        android:text="duck" />
+
+    <Button
+        android:id="@+id/stupid_buttonHadouken"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/stupid_buttonDuck"
+        android:text="hadou" />
+
+    <Button
+        android:id="@+id/stupid_buttonShouryuken"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/stupid_buttonHadouken"
+        android:layout_alignRight="@+id/stupid_buttonHadouken"
+        android:text="shouryu" />
+
+    <Button
+        android:id="@+id/stupid_buttonTatsumaki"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/stupid_buttonShouryuken"
+        android:layout_alignBottom="@+id/stupid_buttonShouryuken"
+        android:layout_toRightOf="@+id/stupid_buttonHadouken"
+        android:text="tatsu" />
+
+    <Button
+        android:id="@+id/stupid_buttonKick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/stupid_buttonTatsumaki"
+        android:layout_alignBottom="@+id/stupid_buttonTatsumaki"
+        android:layout_toRightOf="@+id/stupid_buttonDuck"
+        android:text="kick" />
+
+    <Button
+        android:id="@+id/stupid_buttonShield"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/stupid_buttonKick"
+        android:layout_alignBottom="@+id/stupid_buttonKick"
+        android:layout_toRightOf="@+id/stupid_buttonJump"
+        android:text="shield" />
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/stupid_buttonShield"
+        android:layout_alignBottom="@+id/stupid_buttonShield"
+        android:layout_toRightOf="@+id/stupid_buttonMoveLeft"
+        android:text="Button" />
+
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/button9"
+        android:layout_toRightOf="@+id/button9"
+        android:text="Button" />
+
+</RelativeLayout>
